@@ -4,11 +4,11 @@ import helmet from 'helmet';
 import morgan from 'morgan';
 import { PrismaClient } from '@prisma/client';
 
-import authRoutes from './api/auth/auth.routes';
-import accountRoutes from './api/accounts/accounts.routes';
-import transactionRoutes from './api/transactions/transactions.routes';
-import categoryRoutes from './api/categories/categories.routes';
-import budgetRoutes from './api/budgets/budgets.routes';
+// import authRoutes from './api/auth/auth.routes';
+// import accountRoutes from './api/accounts/accounts.routes';
+// import transactionRoutes from './api/transactions/transactions.routes';
+// import categoryRoutes from './api/categories/categories.routes';
+// import budgetRoutes from './api/budgets/budgets.routes';
 import { errorMiddleware } from './middleware/error.middleware';
 
 const app = express();
@@ -26,11 +26,11 @@ app.use((req, _res, next) => {
 });
 
 // Routes
-app.use('/api/auth', authRoutes);
-app.use('/api/accounts', accountRoutes);
-app.use('/api/transactions', transactionRoutes);
-app.use('/api/categories', categoryRoutes);
-app.use('/api/budgets', budgetRoutes);
+// app.use('/api/auth', authRoutes);
+// app.use('/api/accounts', accountRoutes);
+// app.use('/api/transactions', transactionRoutes);
+// app.use('/api/categories', categoryRoutes);
+// app.use('/api/budgets', budgetRoutes);
 
 // Error handler
 app.use(errorMiddleware);
