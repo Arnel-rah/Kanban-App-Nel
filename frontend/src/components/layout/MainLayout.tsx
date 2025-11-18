@@ -11,8 +11,6 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
   return (
     <div className="flex min-h-screen bg-base-200">
       <Sidebar />
-
-      {/* Mobile menu button */}
       <button
         onClick={() => {
           const sidebar = document.getElementById('sidebar');
